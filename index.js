@@ -9,4 +9,5 @@ function driverNamesWithRevenueOver(drivers, revenue {
   return driversWithRevenueOver(drivers, revenue).map(function(callback) {
     return callback.name
   })
-})
+}
+
