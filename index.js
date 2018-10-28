@@ -23,7 +23,7 @@ function exactMatch(driver, driverObj) {
 }
 
 function exactMatchToList(drivers, driverObj) {
-  return exactMatch.filter(function(callback) {
-    
+  return exactMatch(drivers, driverObj).map(function(callback) {
+    return callback.name
   })
 }
