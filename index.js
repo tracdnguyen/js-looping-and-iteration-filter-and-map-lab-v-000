@@ -1,22 +1,22 @@
 // Code your solution here:
 function driversWithRevenueOver(drivers, revenue) {
-  return drivers.filter(function(driverObj) {
-    return driverObj.revenue > revenue;
+  return drivers.filter(function(callback) {
+    return callback.revenue > revenue;
   });
 }
 
 function driverNamesWithRevenueOver(drivers, revenue) {
-  return driversWithRevenueOver(drivers, revenue).map(function(driverObj) {
-    return driverObj.name
+  return driversWithRevenueOver(drivers, revenue).map(function(callback) {
+    return callback.name
   })
 }
 
 function exactMatch(drivers, driverObj) {
-  return drivers.filter(function(driver) {
+  return drivers.filter(function(callback) {
     let match = false;
 
     for (const element in driverObj) {
-      match = driver[element] === driverObj[element];
+      match = callback[element] === driverObj[element];
     }
     return match;
   })
