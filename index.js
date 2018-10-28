@@ -21,3 +21,9 @@ function exactMatch(driver, driverObj) {
     return match
   })
 }
+
+function exactMatchToList(drivers, driverObj) {
+  return exactMatch.filter(function(callback) {
+    
+  })
+}
