@@ -10,4 +10,3 @@ function driverNamesWithRevenueOver(drivers, revenue {
     return callback.name
   })
 }
-
